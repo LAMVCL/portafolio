@@ -27,7 +27,7 @@
         </div>
     </nav>
     <div class="wrapper">
-        <div class="container">
+        <div class="contenido">
             @yield('seccion')
         </div>
     </div>
