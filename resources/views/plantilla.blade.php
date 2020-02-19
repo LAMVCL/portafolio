@@ -13,17 +13,20 @@
     <title>GPS CHILE</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top justify-content-between">
         <a class="navbar-brand font-weight-bold" href="{{route('inicio')}}">Inos12GPS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="{{ request()->is('inicio') ? 'nav-item active' : '' }}">
+            <li class="{{ request()->is('/') ? 'nav-item active' : '' }}">
               <a class="nav-link" href="{{route('inicio')}}">Inicio <span class="sr-only">(current)</span></a>
             </li>
           </ul>
+          <form action="https://www.google.cl">
+            <button class="btn btn-info" type="submit">Acceder a mi GPS</button>
+          </form> 
         </div>
     </nav>
     <div class="wrapper">
