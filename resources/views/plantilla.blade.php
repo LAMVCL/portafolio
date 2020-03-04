@@ -10,24 +10,40 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- ESTILOS CUSTOM -->
     <link href="{{ asset('css/plantilla.css') }}" rel="stylesheet">
-    <title>GPS CHILE</title>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/plantilla.js')}}"></script>
+    <title>Portafolio</title>
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top justify-content-between">
-        <a class="navbar-brand font-weight-bold" href="{{route('inicio')}}">Inos12GPS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="{{ request()->is('/') ? 'nav-item active' : '' }}">
-              <a class="nav-link" href="{{route('inicio')}}">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-          <form action="https://www.google.cl">
-            <button class="btn btn-info" type="submit">Acceder a mi GPS</button>
-          </form> 
-        </div>
+    <div class="header">
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-between">
+      
+      <a class="navbar-brand" href="{{route('inicio')}}"><img class="logo" src="{{asset('img/logo.png')}}" alt=""></a>
+      
+      <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="{{ request()->is('/') ? 'nav-item active' : '' }}">
+            <a id="navlink" class="nav-link" href="{{route('inicio')}}">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="wrapper">
         <div class="contenido">
@@ -64,9 +80,5 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/app.js') }}"></script> 
   </body>
 </html>
