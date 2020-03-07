@@ -57,7 +57,8 @@
             <div class="row">
               <div class="col-md-6 mt-md-0 mt-3">
                 <h5 class="text-uppercase font-weight-bold"> Información</h5>
-                <p>Somos una empresa dedicada al rubro de los gps para uso vehicular</p>
+                <p>Mi nombre es Luis Martínez, actualmente poseo 20 años y estoy cursando la carrera
+                de Ingeniería Informática en el instituto profesional Santo Tomás</p>
               </div>
               <hr class="clearfix w-100 d-md-none pb-3">
               <div class="col-md-6 mb-md-0 mb-3">
@@ -70,12 +71,15 @@
                     <i class="fas fa-phone-square-alt"></i>
                     <p class="contacto">Número de contacto</p>
                 </a>
-                
+                <a id="divisor" class="text-justify text-decoration-none text-white" href="https://github.com/LAMVCL">
+                  <i class="fab fa-github-square"></i>
+                  <p class="contacto">Página de github</p>
+                </a>
               </div>
             </div>
           </div>
           <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a class="" href="{{route('inicio')}}"> Luis Martínez</a>
+            <a class="text-justify text-decoration-none text-white" href="{{route('inicio')}}"> Luis Martínez</a>
           </div>
         </div>
       </footer>
